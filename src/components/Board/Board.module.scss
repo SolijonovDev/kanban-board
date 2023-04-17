@@ -1,0 +1,9 @@
+.board {
+  padding: 20px 32px;
+
+  .taskPanel {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.card {
+  width: 100%;
+  padding: 10px 5px;
+  background-color: $color2;
+  box-shadow: $card-box-shadow;
+  border-radius: 4px;
+  padding: 12px;
+  text-align: left;
+
+  &.dragging {
+    border: 1px solid #0095f2;
+    box-shadow: 0px 4px 16px rgba(0, 113, 218, 0.4);
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255);
+    opacity: 0.25;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

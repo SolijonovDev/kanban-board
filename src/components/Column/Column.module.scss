@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.column {
+  width: 200px;
+  min-width: 274px;
+  min-height: 120px;
+  border-radius: 4px;
+  margin-right: 26px;
+  height: 100%;
+
+  .columnHeader {
+    background: $color5;
+    padding: 11px 9px;
+    position: sticky;
+    top: 44px;
+    border-radius: inherit;
+    border: 1px solid $color4;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .columnBody {
+    text-align: center;
+    padding: 12px 9px;
+    border-radius: inherit;
+    border: 1px solid $color4;
+    border-top-color: transparent;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .emptyColumn {
+    min-height: 284px;
+    text-align: center;
+    padding-top: 79px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .text {
+    margin-top: 24px;
+    font-size: 13px;
+    font-weight: 600;
+    color: $color6;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
