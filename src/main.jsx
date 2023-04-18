@@ -7,9 +7,12 @@ const queryClient = new QueryClient();
 import App from './App';
 
 import './styles/main.scss';
+import { TodoProvider } from './context/TodoProvider';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <QueryClientProvider client={queryClient}>
-    <App />
-  </QueryClientProvider>,
+  <TodoProvider>
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
+  </TodoProvider>,
 );

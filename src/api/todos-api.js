@@ -7,5 +7,9 @@ export const Api = {
   },
   async updateTodos(object) {
     await $api.put('datas', object);
+  },
+  async addTodo(todo) {
+    const res = await $api.post('todo', todo);
+    return res;
   }
 }
